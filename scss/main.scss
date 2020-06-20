@@ -1,6 +1,73 @@
-h1 {
-  color: red;
+@import "config";
+@import "menu";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-  background-color: gray;
+  @include backgroundImage();
+  background: $primary-color;
+  color: $light-color;
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", "sans-serif";
+}
+
+//Heading
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  &.sm-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem 0rem;
+  }
+}
+
+a {
+  color: $light-color;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      padding-top: 20vh;
+    }
+  }
+
+  .icons {
+    margin-top: 1rem;
+    a {
+      padding-right: 0.4rem;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
 }

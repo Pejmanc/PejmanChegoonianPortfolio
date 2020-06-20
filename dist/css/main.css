@@ -7,12 +7,31 @@
   transition: all 0.25s ease-in;
 }
 
-.btn-line {
+.menu-btn .btn-line {
   width: 28px;
   height: 3px;
+  border-radius: 5px;
   margin: 0 0 5px 0;
-  background: #eeeeee;
+  background: #ffa500;
   transition: all 0.25s ease-in;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  background: #eeeeee;
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  background: #eeeeee;
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 * {

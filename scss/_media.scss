@@ -1,0 +1,62 @@
+@include mediaXl {
+}
+
+@include mediaLg {
+}
+
+@include mediaMd {
+  #home {
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+
+    .lg-heading {
+      line-height: 1.1;
+      font-size: 4.5rem;
+      margin-top: 15vh;
+      margin-bottom: 7vh;
+    }
+    .sm-heading {
+      margin-bottom: 20vh;
+      font-size: 1.7rem;
+    }
+  }
+  div.menu-branding,
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 65vh;
+    transform: translate3d(0, 100%, 0);
+  }
+  .menu-branding {
+    height: 35vh;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@include mediaSm {
+  #home {
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+
+    .lg-heading {
+      line-height: 1;
+      font-size: 3.5rem;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+    .sm-heading {
+      margin-bottom: 20vh;
+      font-size: 1.5rem;
+    }
+  }
+}

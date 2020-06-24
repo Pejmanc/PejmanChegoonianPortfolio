@@ -1,0 +1,57 @@
+.about {
+  padding: 4rem;
+  height: 100%;
+
+  h1 {
+    padding-top: 20vh;
+  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &-left,
+  &-right {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    justify-content: start;
+    float: left;
+    width: 50%;
+    height: 100vh;
+  }
+  &-right {
+    padding-left: 2rem;
+
+    .exp,
+    .edu {
+      h2 {
+        border-bottom: 3px solid $secondary-color;
+        margin-bottom: 0.2rem;
+      }
+      h3,
+      h4 {
+        font-weight: 400;
+      }
+      &-items {
+        display: flex;
+        justify-content: space-between;
+        .edu-item,
+        .exp-item {
+          background: $secondary-color;
+          border-radius: 2px;
+          flex-basis: 25%;
+          text-align: center;
+          height: 30vh;
+          //Vertical Align
+        }
+      }
+    }
+  }
+
+  &-left {
+    h3 {
+      padding-right: 2rem;
+      text-align: justify;
+    }
+  }
+}

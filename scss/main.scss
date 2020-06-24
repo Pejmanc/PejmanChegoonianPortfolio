@@ -1,6 +1,7 @@
 @import "config";
 @import "menu";
-@import "media";
+@import "about";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -71,3 +72,5 @@ main {
     }
   }
 }
+
+@import "media";

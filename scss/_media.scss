@@ -42,6 +42,7 @@
   }
 }
 
+//SMALL---------------------//
 @include mediaSm {
   #home {
     text-align: center;
@@ -57,6 +58,93 @@
     .sm-heading {
       margin-bottom: 20vh;
       font-size: 1.5rem;
+    }
+  }
+
+  //About Page Small Screen
+  body {
+    overflow-x: hidden;
+  }
+
+  .about {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    .lg-heading {
+      line-height: 1;
+      font-size: 3.5rem;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+
+    &-left,
+    &-right {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &-left {
+      h3 {
+        padding: 0 0.5rem;
+        text-align: justify;
+      }
+      .bio-text {
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+        margin-bottom: 4rem;
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+
+      .eduexp {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .edu,
+    .exp {
+      &-items {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+      }
+
+      //Show Titles 'Education and Experience' in Small Screen
+      .eduTitleSm,
+      .expTitleSm {
+        display: flex;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        color: $secondary-color;
+      }
+    }
+
+    .exp {
+      margin-bottom: 2rem;
+    }
+
+    //Hide Titles 'Education and Experience' which are in between
+    .bio-btn,
+    .eduAndBtn,
+    .expAndBtn {
+      display: none !important;
     }
   }
 }

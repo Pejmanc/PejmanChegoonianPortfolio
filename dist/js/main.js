@@ -31,6 +31,7 @@ function toggleMenu() {
 const bioBtn = document.querySelector(".bio-btn");
 const bioText = document.querySelector(".bio-text");
 let showBio = false;
+let mediaSm = window.matchMedia("screen and (max-width: 500px)");
 
 bioBtn.addEventListener("click", toggleBio);
 
@@ -42,6 +43,9 @@ function toggleBio() {
     eduBtn.classList.remove("close");
     eduItems.classList.remove("show");
     showEdu = false;
+    expBtn.classList.remove("close");
+    expItems.classList.remove("show");
+    showExp = false;
   } else {
     bioBtn.classList.remove("close");
     bioText.classList.remove("show");
@@ -64,9 +68,37 @@ function toggleEdu() {
     bioBtn.classList.remove("close");
     bioText.classList.remove("show");
     showBio = false;
+    expBtn.classList.remove("close");
+    expItems.classList.remove("show");
+    showExp = false;
   } else {
     eduBtn.classList.remove("close");
     eduItems.classList.remove("show");
     showEdu = false;
+  }
+}
+
+// Exp Btn Setting
+const expBtn = document.querySelector(".exp-btn");
+const expItems = document.querySelector(".exp-items");
+let showExp = false;
+
+expBtn.addEventListener("click", toggleExp);
+
+function toggleExp() {
+  if (!showExp) {
+    expBtn.classList.add("close");
+    expItems.classList.add("show");
+    showExp = true;
+    bioBtn.classList.remove("close");
+    bioText.classList.remove("show");
+    showBio = false;
+    eduBtn.classList.remove("close");
+    eduItems.classList.remove("show");
+    showEdu = false;
+  } else {
+    expBtn.classList.remove("close");
+    expItems.classList.remove("show");
+    showExp = false;
   }
 }

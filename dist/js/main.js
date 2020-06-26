@@ -26,3 +26,47 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+//Bio Btn Settings
+const bioBtn = document.querySelector(".bio-btn");
+const bioText = document.querySelector(".bio-text");
+let showBio = false;
+
+bioBtn.addEventListener("click", toggleBio);
+
+function toggleBio() {
+  if (!showBio) {
+    bioBtn.classList.add("close");
+    bioText.classList.add("show");
+    showBio = true;
+    eduBtn.classList.remove("close");
+    eduItems.classList.remove("show");
+    showEdu = false;
+  } else {
+    bioBtn.classList.remove("close");
+    bioText.classList.remove("show");
+    showBio = false;
+  }
+}
+
+// Edu Btn Setting
+const eduBtn = document.querySelector(".edu-btn");
+const eduItems = document.querySelector(".edu-items");
+let showEdu = false;
+
+eduBtn.addEventListener("click", toggleEdu);
+
+function toggleEdu() {
+  if (!showEdu) {
+    eduBtn.classList.add("close");
+    eduItems.classList.add("show");
+    showEdu = true;
+    bioBtn.classList.remove("close");
+    bioText.classList.remove("show");
+    showBio = false;
+  } else {
+    eduBtn.classList.remove("close");
+    eduItems.classList.remove("show");
+    showEdu = false;
+  }
+}

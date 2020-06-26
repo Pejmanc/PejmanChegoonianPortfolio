@@ -21,28 +21,57 @@
   }
   &-right {
     padding-left: 2rem;
+    .eduexp {
+      display: flex;
+      justify-content: space-between;
+      .eduAndBtn,
+      .expAndBtn {
+        display: flex;
+        align-items: baseline;
+      }
+    }
 
-    .exp,
     .edu {
+      position: relative;
+      top: 11.2rem;
+
       h2 {
-        border-bottom: 3px solid $secondary-color;
         margin-bottom: 0.2rem;
+        padding-top: 0.5rem;
       }
       h3,
       h4 {
         font-weight: 400;
       }
+      h3 {
+        //vertical align
+        padding-top: 3rem;
+      }
+      h4 {
+        //align
+        padding: 1rem 1rem;
+      }
+
+      //------------Edu Items---------
       &-items {
+        margin-bottom: 1.5rem;
         display: flex;
         justify-content: space-between;
+        visibility: hidden;
+        transform: translate3d(100%, 0, 0);
+        @include easeOut;
+
+        &.show {
+          visibility: visible;
+          transform: translate3d(0, 0, 0);
+        }
         .edu-item,
         .exp-item {
-          background: $secondary-color;
+          background: lighten($primary-color, $amount: 4);
           border-radius: 2px;
-          flex-basis: 25%;
+          flex-basis: 29%;
           text-align: center;
-          height: 30vh;
-          //Vertical Align
+          height: 10rem;
         }
       }
     }
@@ -52,6 +81,156 @@
     h3 {
       padding-right: 2rem;
       text-align: justify;
+    }
+
+    //Bio Show
+    .bio-text {
+      line-height: 1.6;
+      margin-top: 1.5rem;
+      visibility: hidden;
+      transform: translate3d(-100%, 0, 0);
+      @include easeOut;
+      &.show {
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+}
+
+//-----------Bio------------//
+//Bio Btn
+
+.bio-btn {
+  z-index: 2;
+  cursor: pointer;
+  @include easeOut;
+  width: fit-content;
+  .btn-line {
+    width: 13px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 0 0 5px 0;
+    background: $secondary-color;
+    @include easeOut;
+
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(-45deg);
+    }
+  }
+
+  //Rotation of Bio into v
+  &.close {
+    transform: rotate(90deg);
+
+    .btn-line {
+      //line 1
+      &:nth-child(1) {
+        background: $light-color;
+        transform: rotate(45deg);
+      }
+
+      //line 2
+      &:nth-child(2) {
+        background: $light-color;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+//-----------Edu------------//
+//Edu Btn
+
+.edu-btn {
+  z-index: 2;
+  cursor: pointer;
+  @include easeOut;
+  width: fit-content;
+  margin-left: 1.5rem;
+  padding-top: 0.3rem;
+  .btn-line {
+    width: 13px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 0 0 5px 0;
+    background: $secondary-color;
+    @include easeOut;
+
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(-45deg);
+    }
+  }
+
+  //Rotation ^
+  &.close {
+    transform: rotate(-90deg);
+
+    .btn-line {
+      //line 1
+      &:nth-child(1) {
+        background: $light-color;
+        transform: rotate(45deg);
+      }
+
+      //line 2
+      &:nth-child(2) {
+        background: $light-color;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+//-----------Exp------------//
+//Exp Btn
+
+.exp-btn {
+  z-index: 2;
+  cursor: pointer;
+  @include easeOut;
+  width: fit-content;
+  margin-right: 1.5rem;
+  padding-top: 0.3rem;
+
+  .btn-line {
+    width: 13px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 0 0 5px 0;
+    background: $secondary-color;
+    @include easeOut;
+
+    &:nth-child(1) {
+      transform: rotate(-45deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+  }
+
+  //Rotation ^
+  &.close {
+    transform: rotate(90deg);
+
+    .btn-line {
+      //line 1
+      &:nth-child(1) {
+        background: $light-color;
+        transform: rotate(45deg);
+      }
+
+      //line 2
+      &:nth-child(2) {
+        background: $light-color;
+        transform: rotate(-45deg);
+      }
     }
   }
 }

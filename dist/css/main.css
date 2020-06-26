@@ -155,39 +155,197 @@
   padding-left: 2rem;
 }
 
-.about-right .exp h2,
-.about-right .edu h2 {
-  border-bottom: 3px solid #ffa500;
-  margin-bottom: 0.2rem;
+.about-right .eduexp {
+  display: flex;
+  justify-content: space-between;
 }
 
-.about-right .exp h3,
-.about-right .exp h4,
+.about-right .eduexp .eduAndBtn,
+.about-right .eduexp .expAndBtn {
+  display: flex;
+  align-items: baseline;
+}
+
+.about-right .edu {
+  position: relative;
+  top: 11.2rem;
+}
+
+.about-right .edu h2 {
+  margin-bottom: 0.2rem;
+  padding-top: 0.5rem;
+}
+
 .about-right .edu h3,
 .about-right .edu h4 {
   font-weight: 400;
 }
 
-.about-right .exp-items,
-.about-right .edu-items {
-  display: flex;
-  justify-content: space-between;
+.about-right .edu h3 {
+  padding-top: 3rem;
 }
 
-.about-right .exp-items .edu-item,
-.about-right .exp-items .exp-item,
+.about-right .edu h4 {
+  padding: 1rem 1rem;
+}
+
+.about-right .edu-items {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  visibility: hidden;
+  transform: translate3d(100%, 0, 0);
+  transition: all 0.25s ease-in;
+}
+
+.about-right .edu-items.show {
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+
 .about-right .edu-items .edu-item,
 .about-right .edu-items .exp-item {
-  background: #ffa500;
+  background: #737373;
   border-radius: 2px;
-  flex-basis: 25%;
+  flex-basis: 29%;
   text-align: center;
-  height: 30vh;
+  height: 10rem;
 }
 
 .about-left h3 {
   padding-right: 2rem;
   text-align: justify;
+}
+
+.about-left .bio-text {
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  visibility: hidden;
+  transform: translate3d(-100%, 0, 0);
+  transition: all 0.25s ease-in;
+}
+
+.about-left .bio-text.show {
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+
+.bio-btn {
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  width: fit-content;
+}
+
+.bio-btn .btn-line {
+  width: 13px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 0 0 5px 0;
+  background: #ffa500;
+  transition: all 0.25s ease-in;
+}
+
+.bio-btn .btn-line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.bio-btn .btn-line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.bio-btn.close {
+  transform: rotate(90deg);
+}
+
+.bio-btn.close .btn-line:nth-child(1) {
+  background: #eeeeee;
+  transform: rotate(45deg);
+}
+
+.bio-btn.close .btn-line:nth-child(2) {
+  background: #eeeeee;
+  transform: rotate(-45deg);
+}
+
+.edu-btn {
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  width: fit-content;
+  margin-left: 1.5rem;
+  padding-top: 0.3rem;
+}
+
+.edu-btn .btn-line {
+  width: 13px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 0 0 5px 0;
+  background: #ffa500;
+  transition: all 0.25s ease-in;
+}
+
+.edu-btn .btn-line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.edu-btn .btn-line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.edu-btn.close {
+  transform: rotate(-90deg);
+}
+
+.edu-btn.close .btn-line:nth-child(1) {
+  background: #eeeeee;
+  transform: rotate(45deg);
+}
+
+.edu-btn.close .btn-line:nth-child(2) {
+  background: #eeeeee;
+  transform: rotate(-45deg);
+}
+
+.exp-btn {
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  width: fit-content;
+  margin-right: 1.5rem;
+  padding-top: 0.3rem;
+}
+
+.exp-btn .btn-line {
+  width: 13px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 0 0 5px 0;
+  background: #ffa500;
+  transition: all 0.25s ease-in;
+}
+
+.exp-btn .btn-line:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+.exp-btn .btn-line:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.exp-btn.close {
+  transform: rotate(90deg);
+}
+
+.exp-btn.close .btn-line:nth-child(1) {
+  background: #eeeeee;
+  transform: rotate(45deg);
+}
+
+.exp-btn.close .btn-line:nth-child(2) {
+  background: #eeeeee;
+  transform: rotate(-45deg);
 }
 
 * {
@@ -202,6 +360,14 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Raleway", "sans-serif";
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  /* Safari */
+  /* Konqueror HTML */
+  /* Old versions of Firefox */
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 body#bg-img {

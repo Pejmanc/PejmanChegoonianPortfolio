@@ -33,7 +33,9 @@ const bioText = document.querySelector(".bio-text");
 let showBio = false;
 let mediaSm = window.matchMedia("screen and (max-width: 500px)");
 
-bioBtn.addEventListener("click", toggleBio);
+if (bioBtn) {
+  bioBtn.addEventListener("click", toggleBio);
+}
 
 function toggleBio() {
   if (!showBio) {
@@ -58,7 +60,9 @@ const eduBtn = document.querySelector(".edu-btn");
 const eduItems = document.querySelector(".edu-items");
 let showEdu = false;
 
-eduBtn.addEventListener("click", toggleEdu);
+if (eduBtn) {
+  eduBtn.addEventListener("click", toggleEdu);
+}
 
 function toggleEdu() {
   if (!showEdu) {
@@ -83,7 +87,9 @@ const expBtn = document.querySelector(".exp-btn");
 const expItems = document.querySelector(".exp-items");
 let showExp = false;
 
-expBtn.addEventListener("click", toggleExp);
+if (expBtn) {
+  expBtn.addEventListener("click", toggleExp);
+}
 
 function toggleExp() {
   if (!showExp) {

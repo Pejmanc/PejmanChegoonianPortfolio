@@ -4,7 +4,7 @@
   bottom: 0;
   width: 100%;
   background-color: darken($primary-color, $amount: 2);
-  color: lighten($primary-color, $amount: 7);
+  color: darken($primary-color, $amount: 15);
   text-align: center;
   font-weight: 400;
   font-size: 0.8rem;

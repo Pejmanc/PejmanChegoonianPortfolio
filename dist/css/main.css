@@ -480,6 +480,20 @@
   background: #e6e6e6;
 }
 
+.location a,
+.tel a,
+.contactemail a {
+  cursor: default;
+}
+
+.location p,
+.tel p,
+.contactemail p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

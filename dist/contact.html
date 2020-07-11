@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/main.css" />
-    <title>About Pejman Chegoonian</title>
+    <title>Contact Pejman Chegoonian</title>
   </head>
   <body>
     <header>
@@ -44,8 +44,8 @@
       </nav>
     </header>
 
-    <div class="about">
-      <div class="about-left">
+    <div class="contact">
+      <div class="contact-left">
         <h1 class="lg-heading">
           Contact <span class="text-secondary">Me</span>
         </h1>
@@ -75,84 +75,34 @@
         </h3>
       </div>
 
-      <!-- about info -->
-      <div class="about-right">
-        <!-- Education -->
-        <div class="edu">
-          <div class="eduTitleSm">
-            Education
+      <!-- contact info -->
+      <div class="contact-right">
+        <form method="post" netlify>
+          <div class="form-item">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="lable-name"
+              ><span class="content-name">Name</span></label
+            >
           </div>
-          <div class="edu-items">
-            <div class="edu-item">
-              <h3>PhD.</h3>
-              <h4>
-                Tourism Businesses
-              </h4>
-            </div>
-
-            <div class="edu-item">
-              <h3>Master</h3>
-              <h4>
-                MBA
-              </h4>
-            </div>
-
-            <div class="edu-item">
-              <h3>Bachelor</h3>
-              <h4>
-                Computer Engineering
-              </h4>
-            </div>
+          <div class="form-item">
+            <input type="text" name="email" autocomplete="off" required />
+            <label for="email" class="lable-name"
+              ><span class="content-name">Email</span></label
+            >
           </div>
-        </div>
-
-        <h2 class="sm-heading">
-          <div class="eduexp">
-            <div class="eduAndBtn">
-              Education
-              <div class="edu-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-              </div>
-            </div>
-            <div class="expAndBtn">
-              <div class="exp-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-              </div>
-              Experience
-            </div>
+          <div class="form-item">
+            <input type="text" name="message" autocomplete="off" required />
+            <label for="message" class="lable-name"
+              ><span class="content-name">Message</span></label
+            >
           </div>
-        </h2>
-
-        <!-- Experience -->
-        <div class="exp">
-          <div class="expTitleSm">
-            Experience
+          <div class="form-item">
+            <input type="submit" value="Submit" name="submit" class="submit" />
+            <label for="submit" class="lable-name"
+              ><span class="content-name"></span
+            ></label>
           </div>
-          <div class="exp-items">
-            <div class="exp-item">
-              <h3>2020</h3>
-              <h4>
-                Account Manager
-              </h4>
-            </div>
-
-            <div class="exp-item">
-              <h3>2016</h3>
-              <h4>
-                Managemer
-              </h4>
-            </div>
-
-            <div class="exp-item">
-              <h3>2019-present</h3>
-              <h4>
-                Web developer
-              </h4>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
 

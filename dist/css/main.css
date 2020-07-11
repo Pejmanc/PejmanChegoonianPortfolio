@@ -618,7 +618,7 @@
   text-align: justify;
 }
 
-.contact-left .bio-text {
+.contact-left .contact-text {
   line-height: 1.6;
   margin-top: 1.5rem;
   visibility: hidden;
@@ -626,19 +626,19 @@
   transition: all 0.25s ease-in;
 }
 
-.contact-left .bio-text.show {
+.contact-left .contact-text.show {
   visibility: visible;
   transform: translate3d(0, 0, 0);
 }
 
-.bio-btn {
+.contact-btn {
   z-index: 2;
   cursor: pointer;
   transition: all 0.25s ease-in;
   width: fit-content;
 }
 
-.bio-btn .btn-line {
+.contact-btn .btn-line {
   width: 13px;
   height: 3px;
   border-radius: 5px;
@@ -647,24 +647,24 @@
   transition: all 0.25s ease-in;
 }
 
-.bio-btn .btn-line:nth-child(1) {
+.contact-btn .btn-line:nth-child(1) {
   transform: rotate(45deg);
 }
 
-.bio-btn .btn-line:nth-child(2) {
+.contact-btn .btn-line:nth-child(2) {
   transform: rotate(-45deg);
 }
 
-.bio-btn.close {
+.contact-btn.close {
   transform: rotate(90deg);
 }
 
-.bio-btn.close .btn-line:nth-child(1) {
+.contact-btn.close .btn-line:nth-child(1) {
   background: #696969;
   transform: rotate(45deg);
 }
 
-.bio-btn.close .btn-line:nth-child(2) {
+.contact-btn.close .btn-line:nth-child(2) {
   background: #696969;
   transform: rotate(-45deg);
 }

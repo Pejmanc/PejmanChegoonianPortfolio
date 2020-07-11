@@ -108,3 +108,25 @@ function toggleExp() {
     showExp = false;
   }
 }
+
+//Contact Btn Settings
+const contactBtn = document.querySelector(".contact-btn");
+const contactText = document.querySelector(".contact-text");
+let showContact = false;
+// let mediaSm = window.matchMedia("screen and (max-width: 500px)");
+
+if (contactBtn) {
+  contactBtn.addEventListener("click", toggleContact);
+}
+
+function toggleContact() {
+  if (!showContact) {
+    contactBtn.classList.add("close");
+    contactText.classList.add("show");
+    showContact = true;
+  } else {
+    contactBtn.classList.remove("close");
+    contactText.classList.remove("show");
+    showContact = false;
+  }
+}

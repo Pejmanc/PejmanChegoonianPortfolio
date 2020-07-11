@@ -128,8 +128,8 @@
       text-align: justify;
     }
 
-    //Bio Show
-    .bio-text {
+    //Contact Show
+    .contact-text {
       line-height: 1.6;
       margin-top: 1.5rem;
       visibility: hidden;
@@ -144,9 +144,9 @@
 }
 
 //-----------Arrows (Btns)------------//
-//Bio Btn
+//Contact Btn
 
-.bio-btn {
+.contact-btn {
   z-index: 2;
   cursor: pointer;
   @include easeOut;
@@ -167,7 +167,7 @@
     }
   }
 
-  //Rotation of Bio into v
+  //Rotation of Contact into v
   &.close {
     transform: rotate(90deg);
 

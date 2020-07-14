@@ -591,14 +591,14 @@
   width: 100%;
   border-bottom: 2px solid #222f5b;
   transform: translateX(-101%);
-  transition: transform 0.3s ease;
+  transition: all 0.25s ease-in;
 }
 
 .contact-right .form-item label .content-name {
   position: absolute;
   bottom: 0.1rem;
   left: 0px;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease-in;
   color: #222f5b;
 }
 

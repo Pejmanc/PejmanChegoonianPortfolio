@@ -100,13 +100,15 @@
           width: 100%;
           border-bottom: 2px solid $secondary-color;
           transform: translateX(-101%);
-          transition: transform 0.3s ease;
+          @include easeOut;
+          // transition: transform 0.3s ease;
         }
         .content-name {
           position: absolute;
           bottom: 0.1rem;
           left: 0px;
-          transition: all 0.3s ease;
+          @include easeOut;
+          // transition: all 0.3s ease;
           color: $secondary-color;
         }
       }

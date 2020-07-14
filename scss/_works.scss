@@ -63,7 +63,7 @@
   &-right {
     display: grid;
     gap: 0.7rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-content: center;
     padding-bottom: 0;
     img {
@@ -79,9 +79,15 @@
 .btn-dark {
   @extend .btn;
   background: lighten($primary-color, $amount: 3);
+  i {
+    margin-right: 0.5rem;
+  }
 }
 
 .btn-light {
   @extend .btn;
   background: darken($primary-color, $amount: 3);
+  i {
+    margin-right: 0.5rem;
+  }
 }

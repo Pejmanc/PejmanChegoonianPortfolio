@@ -180,8 +180,7 @@
     }
 
     &-right {
-      margin-top: 63rem;
-      margin-bottom: 70rem;
+      margin-bottom: 1rem;
 
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -404,7 +403,7 @@
     }
 
     &-right {
-      margin: 40rem 0;
+      margin-bottom: 1rem;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
     }

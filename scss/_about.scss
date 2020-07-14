@@ -39,7 +39,7 @@
     height: 100vh;
   }
   &-right {
-    margin-top: 6.7rem;
+    margin-top: 1.5rem;
     padding-left: 0rem;
     .eduexp {
       display: flex;
@@ -52,7 +52,34 @@
     }
     h2 {
       &.sm-heading {
-        margin: 1.5rem 0;
+        margin: 1rem 0;
+      }
+    }
+
+    .edu {
+      h3 {
+        //vertical align
+        padding-top: 3rem;
+      }
+      h4 {
+        //align
+        padding: 1rem 1rem;
+      }
+    }
+    .exp {
+      h3 {
+        //vertical align
+        padding-top: 1rem;
+      }
+      h4 {
+        //align
+        padding: 1rem 1rem;
+        ul li {
+          justify-content: start;
+          text-align: start;
+          list-style: none;
+          padding-bottom: 0.7rem;
+        }
       }
     }
 
@@ -63,14 +90,6 @@
       h3,
       h4 {
         font-weight: 400;
-      }
-      h3 {
-        //vertical align
-        padding-top: 3rem;
-      }
-      h4 {
-        //align
-        padding: 1rem 1rem;
       }
 
       //------------Edu, Exp Items---------
@@ -85,13 +104,32 @@
           visibility: visible;
           transform: translate3d(0, 0, 0);
         }
-        .edu-item,
-        .exp-item {
+        .edu-item {
           background: lighten($primary-color, $amount: 4);
-          border-radius: 2px;
+          border-radius: 3px;
           flex-basis: 29%;
           text-align: center;
           height: 10rem;
+          border: 1px solid lighten($primary-color, $amount: 4);
+          box-shadow: 5px 5px 15px $light-color;
+          transition: transform 0.3s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .exp-item {
+          background: lighten($primary-color, $amount: 4);
+          border-radius: 3px;
+          flex-basis: 29%;
+          text-align: center;
+          height: 15.2rem;
+          border: 1px solid lighten($primary-color, $amount: 4);
+          box-shadow: 5px 5px 15px $light-color;
+          transition: transform 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
       .eduTitleSm,
@@ -194,7 +232,7 @@
 
   //Rotation ^
   &.close {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 
     .btn-line {
       //line 1
@@ -241,7 +279,7 @@
 
   //Rotation ^
   &.close {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 
     .btn-line {
       //line 1

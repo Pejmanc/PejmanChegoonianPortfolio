@@ -185,7 +185,7 @@
 }
 
 .about-right {
-  margin-top: 6.7rem;
+  margin-top: 1.5rem;
   padding-left: 0rem;
 }
 
@@ -201,7 +201,30 @@
 }
 
 .about-right h2.sm-heading {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
+}
+
+.about-right .edu h3 {
+  padding-top: 3rem;
+}
+
+.about-right .edu h4 {
+  padding: 1rem 1rem;
+}
+
+.about-right .exp h3 {
+  padding-top: 1rem;
+}
+
+.about-right .exp h4 {
+  padding: 1rem 1rem;
+}
+
+.about-right .exp h4 ul li {
+  justify-content: start;
+  text-align: start;
+  list-style: none;
+  padding-bottom: 0.7rem;
 }
 
 .about-right .edu,
@@ -214,16 +237,6 @@
 .about-right .exp h3,
 .about-right .exp h4 {
   font-weight: 400;
-}
-
-.about-right .edu h3,
-.about-right .exp h3 {
-  padding-top: 3rem;
-}
-
-.about-right .edu h4,
-.about-right .exp h4 {
-  padding: 1rem 1rem;
 }
 
 .about-right .edu-items,
@@ -242,14 +255,37 @@
 }
 
 .about-right .edu-items .edu-item,
-.about-right .edu-items .exp-item,
-.about-right .exp-items .edu-item,
-.about-right .exp-items .exp-item {
+.about-right .exp-items .edu-item {
   background: #f8f8f8;
-  border-radius: 2px;
+  border-radius: 3px;
   flex-basis: 29%;
   text-align: center;
   height: 10rem;
+  border: 1px solid #f8f8f8;
+  box-shadow: 5px 5px 15px #696969;
+  transition: transform 0.3s;
+}
+
+.about-right .edu-items .edu-item:hover,
+.about-right .exp-items .edu-item:hover {
+  transform: scale(1.1);
+}
+
+.about-right .edu-items .exp-item,
+.about-right .exp-items .exp-item {
+  background: #f8f8f8;
+  border-radius: 3px;
+  flex-basis: 29%;
+  text-align: center;
+  height: 15.2rem;
+  border: 1px solid #f8f8f8;
+  box-shadow: 5px 5px 15px #696969;
+  transition: transform 0.3s;
+}
+
+.about-right .edu-items .exp-item:hover,
+.about-right .exp-items .exp-item:hover {
+  transform: scale(1.1);
 }
 
 .about-right .edu .eduTitleSm,
@@ -342,7 +378,7 @@
 }
 
 .edu-btn.close {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 
 .edu-btn.close .btn-line:nth-child(1) {
@@ -382,7 +418,7 @@
 }
 
 .exp-btn.close {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 
 .exp-btn.close .btn-line:nth-child(1) {
@@ -834,6 +870,9 @@ main .icons a:hover {
     flex-direction: column;
     overflow-x: hidden;
   }
+  .about h1 {
+    padding-top: 1.2rem;
+  }
   .about .lg-heading {
     line-height: 1;
     font-size: 3.5rem;
@@ -872,13 +911,16 @@ main .icons a:hover {
     visibility: visible;
     transform: translate3d(0, 0, 0);
   }
+  .about .edu .edu-items,
+  .about .exp .edu-items {
+    margin-bottom: 3rem;
+  }
   .about .edu .eduTitleSm,
   .about .edu .expTitleSm,
   .about .exp .eduTitleSm,
   .about .exp .expTitleSm {
     display: flex;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
     padding-left: 1rem;
     color: #222f5b;
   }
@@ -901,6 +943,9 @@ main .icons a:hover {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+  }
+  .works h1 {
+    padding-top: 1.2rem;
   }
   .works .lg-heading {
     line-height: 1;
@@ -925,9 +970,60 @@ main .icons a:hover {
     margin-bottom: 4rem;
   }
   .works-right {
-    margin: 80rem 0;
+    margin-top: 63rem;
+    margin-bottom: 70rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .contact {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .contact-btn {
+    display: none !important;
+  }
+  .contact h1 {
+    padding-top: 0;
+  }
+  .contact .lg-heading {
+    line-height: 1;
+    font-size: 3.5rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .contact-left, .contact-right {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact-left h3 {
+    padding: 0 0.5rem;
+    text-align: justify;
+  }
+  .contact-left .contact-text {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    margin: 0;
+  }
+  .contact-right {
+    margin: 0;
+  }
+  .contact-right form {
+    padding: 0 1rem;
+    margin: 0;
+    width: 90%;
+  }
+  .contact-right form .form-item {
+    width: 100%;
   }
 }
 
@@ -961,6 +1057,9 @@ main .icons a:hover {
     flex-direction: column;
     overflow-x: hidden;
   }
+  .about h1 {
+    padding-top: 1.2rem;
+  }
   .about .lg-heading {
     line-height: 1;
     font-size: 3.5rem;
@@ -973,6 +1072,9 @@ main .icons a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+  }
+  .about-left {
+    margin-bottom: 11rem;
   }
   .about-left h3 {
     padding: 0 0.5rem;
@@ -1015,7 +1117,8 @@ main .icons a:hover {
   .about .bio-btn,
   .about .eduAndBtn,
   .about .expAndBtn,
-  .about .works-btn {
+  .about .works-btn,
+  .about .contact-btn {
     display: none !important;
   }
   .works {
@@ -1028,6 +1131,9 @@ main .icons a:hover {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+  }
+  .works h1 {
+    padding-top: 1.2rem;
   }
   .works .lg-heading {
     line-height: 1;
@@ -1055,5 +1161,55 @@ main .icons a:hover {
     margin: 40rem 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .contact {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .contact-btn {
+    display: none !important;
+  }
+  .contact h1 {
+    padding-top: 0;
+  }
+  .contact .lg-heading {
+    line-height: 1;
+    font-size: 3.5rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .contact-left, .contact-right {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact-left h3 {
+    padding: 0 0.5rem;
+    text-align: justify;
+  }
+  .contact-left .contact-text {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    margin: 0;
+  }
+  .contact-right {
+    margin: 0;
+  }
+  .contact-right form {
+    padding: 0 1rem;
+    margin: 0;
+    width: 90%;
+  }
+  .contact-right form .form-item {
+    width: 100%;
   }
 }

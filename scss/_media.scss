@@ -58,7 +58,9 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-
+    h1 {
+      padding-top: 1.2rem;
+    }
     .lg-heading {
       line-height: 1;
       font-size: 3.5rem;
@@ -106,13 +108,16 @@
         visibility: visible;
         transform: translate3d(0, 0, 0);
       }
+      .edu-items {
+        margin-bottom: 3rem;
+      }
 
       //Show Titles 'Education and Experience' in Small Screen
       .eduTitleSm,
       .expTitleSm {
         display: flex;
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        // margin-top: 5rem;
         padding-left: 1rem;
         color: $secondary-color;
       }
@@ -143,7 +148,9 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-
+    h1 {
+      padding-top: 1.2rem;
+    }
     .lg-heading {
       line-height: 1;
       font-size: 3.5rem;
@@ -173,10 +180,71 @@
     }
 
     &-right {
-      margin: 80rem 0;
+      margin-top: 63rem;
+      margin-bottom: 70rem;
 
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  //Contact in Medium Screen
+
+  .contact {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    &-btn {
+      display: none !important;
+    }
+    h1 {
+      padding-top: 0;
+    }
+    .lg-heading {
+      line-height: 1;
+      font-size: 3.5rem;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+
+    &-left,
+    &-right {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &-left {
+      h3 {
+        padding: 0 0.5rem;
+        text-align: justify;
+      }
+      .contact-text {
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+        margin: 0;
+      }
+    }
+
+    &-right {
+      margin: 0;
+
+      form {
+        padding: 0 1rem;
+        margin: 0;
+        width: 90%;
+        .form-item {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -215,7 +283,9 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-
+    h1 {
+      padding-top: 1.2rem;
+    }
     .lg-heading {
       line-height: 1;
       font-size: 3.5rem;
@@ -233,6 +303,7 @@
     }
 
     &-left {
+      margin-bottom: 11rem;
       h3 {
         padding: 0 0.5rem;
         text-align: justify;
@@ -283,7 +354,8 @@
     .bio-btn,
     .eduAndBtn,
     .expAndBtn,
-    .works-btn {
+    .works-btn,
+    .contact-btn {
       display: none !important;
     }
   }
@@ -300,7 +372,9 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-
+    h1 {
+      padding-top: 1.2rem;
+    }
     .lg-heading {
       line-height: 1;
       font-size: 3.5rem;
@@ -331,9 +405,68 @@
 
     &-right {
       margin: 40rem 0;
-
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  //Contact in Smal Screen
+
+  .contact {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    &-btn {
+      display: none !important;
+    }
+    h1 {
+      padding-top: 0;
+    }
+    .lg-heading {
+      line-height: 1;
+      font-size: 3.5rem;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+
+    &-left,
+    &-right {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &-left {
+      h3 {
+        padding: 0 0.5rem;
+        text-align: justify;
+      }
+      .contact-text {
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+        margin: 0;
+      }
+    }
+
+    &-right {
+      margin: 0;
+
+      form {
+        padding: 0 1rem;
+        margin: 0;
+        width: 90%;
+        .form-item {
+          width: 100%;
+        }
+      }
     }
   }
 }

@@ -849,6 +849,10 @@ main .icons a:hover {
     height: 35vh;
     transform: translate3d(0, -100%, 0);
   }
+  .menu-branding .portrait {
+    width: 150px;
+    height: 150px;
+  }
   #home {
     text-align: center;
     align-items: center;
@@ -1035,6 +1039,9 @@ main .icons a:hover {
 }
 
 @media screen and (max-width: 500px) {
+  body#bg-img {
+    background: #696969;
+  }
   #home {
     text-align: center;
     align-items: center;

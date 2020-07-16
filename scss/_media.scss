@@ -24,6 +24,10 @@
   .menu-branding {
     height: 35vh;
     transform: translate3d(0, -100%, 0);
+    .portrait {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   #home {
@@ -250,6 +254,9 @@
 
 //SMALL---------------------//
 @include mediaSm {
+  body#bg-img {
+    background: $light-color;
+  }
   #home {
     text-align: center;
     align-items: center;

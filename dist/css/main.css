@@ -831,6 +831,9 @@ main .icons a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  body#bg-img {
+    background: #696969;
+  }
   div.menu-branding,
   ul.menu-nav {
     float: none;
@@ -844,6 +847,9 @@ main .icons a:hover {
   .menu-nav {
     height: 65vh;
     transform: translate3d(0, 100%, 0);
+    align-items: center;
+    justify-content: start;
+    padding-top: 6rem;
   }
   .menu-branding {
     height: 35vh;
@@ -881,6 +887,7 @@ main .icons a:hover {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    overflow-y: visible;
   }
   .about h1 {
     padding-top: 1.2rem;

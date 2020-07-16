@@ -5,6 +5,9 @@
 }
 
 @include mediaMd {
+  body#bg-img {
+    background: $light-color;
+  }
   // Menu
   div.menu-branding,
   ul.menu-nav {
@@ -20,6 +23,9 @@
   .menu-nav {
     height: 65vh;
     transform: translate3d(0, 100%, 0);
+    align-items: center;
+    justify-content: start;
+    padding-top: 6rem;
   }
   .menu-branding {
     height: 35vh;
@@ -62,6 +68,7 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    overflow-y: visible;
     h1 {
       padding-top: 1.2rem;
     }

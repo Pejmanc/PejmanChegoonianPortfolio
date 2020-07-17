@@ -424,13 +424,15 @@
 }
 
 .toptape {
-  position: sticky;
+  position: relative;
+  top: 0;
   width: 100%;
   height: 4rem;
   background: #eeeeee;
 }
 
 .works {
+  position: absolute;
   padding: 4rem;
   height: 100%;
   position: fixed;
@@ -856,177 +858,16 @@ main .icons a:hover {
   body {
     overflow-x: hidden;
   }
-  .about {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .about h1 {
-    padding-top: 1.2rem;
-  }
-  .about .lg-heading {
-    line-height: 1;
-    font-size: 3.5rem;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  .about-left, .about-right {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .about-left h3 {
-    padding: 0 0.5rem;
-    text-align: justify;
-  }
-  .about-left .bio-text {
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-    margin-bottom: 4rem;
-  }
-  .about-right {
-    display: flex;
-    flex-direction: column;
-  }
-  .about-right .eduexp {
-    display: flex;
-    flex-direction: column;
-  }
-  .about .edu-items,
-  .about .exp-items {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-  }
-  .about .edu .edu-items,
-  .about .exp .edu-items {
-    margin-bottom: 3rem;
-  }
-  .about .edu .eduTitleSm,
-  .about .edu .expTitleSm,
-  .about .exp .eduTitleSm,
-  .about .exp .expTitleSm {
-    display: flex;
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    color: #222f5b;
-  }
-  .about .exp {
-    margin-bottom: 2rem;
-  }
-  .about .bio-btn,
-  .about .eduAndBtn,
-  .about .expAndBtn,
-  .about .works-btn {
-    display: none !important;
-  }
-  .works {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .works h1 {
-    padding-top: 1.2rem;
-  }
-  .works .lg-heading {
-    line-height: 1;
-    font-size: 3.5rem;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  .works-left, .works-right {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .works-left h3 {
-    padding: 0 0.5rem;
-    text-align: justify;
-  }
-  .works-left .works-text {
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-    margin-bottom: 4rem;
-  }
-  .works-right {
-    margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .contact {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .contact-btn {
-    display: none !important;
-  }
-  .contact h1 {
-    padding-top: 0;
-  }
-  .contact .lg-heading {
-    line-height: 1;
-    font-size: 3.5rem;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  .contact-left, .contact-right {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .contact-left h3 {
-    padding: 0 0.5rem;
-    text-align: justify;
-  }
-  .contact-left .contact-text {
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-    margin: 0;
-  }
-  .contact-right {
-    margin: 0;
-  }
-  .contact-right form {
-    padding: 0 1rem;
-    margin: 0;
-    width: 90%;
-  }
-  .contact-right form .form-item {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 500px) {
+  .menu-btn {
+    right: 15px;
+    top: 20px;
+  }
+  .toptape {
+    height: 3.4rem;
+  }
   body#bg-img {
     background: #696969;
   }
@@ -1048,173 +889,69 @@ main .icons a:hover {
   body {
     overflow-x: hidden;
   }
-  .about {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .about h1 {
-    padding-top: 1.2rem;
-  }
-  .about .lg-heading {
-    line-height: 1;
-    font-size: 3.5rem;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  .about-left, .about-right {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .about-left {
-    margin-bottom: 11rem;
-  }
-  .about-left h3 {
-    padding: 0 0.5rem;
-    text-align: justify;
-  }
-  .about-left .bio-text {
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-    margin-bottom: 4rem;
-  }
-  .about-right {
-    display: flex;
-    flex-direction: column;
-  }
-  .about-right .eduexp {
-    display: flex;
-    flex-direction: column;
-  }
-  .about .edu-items,
-  .about .exp-items {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-  }
-  .about .edu .eduTitleSm,
-  .about .edu .expTitleSm,
-  .about .exp .eduTitleSm,
-  .about .exp .expTitleSm {
-    display: flex;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-    color: #222f5b;
-  }
-  .about .exp {
-    margin-bottom: 2rem;
-  }
-  .about .bio-btn,
-  .about .eduAndBtn,
-  .about .expAndBtn,
-  .about .works-btn,
-  .about .contact-btn {
-    display: none !important;
-  }
-  .works {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .works h1 {
-    padding-top: 1.2rem;
-  }
-  .works .lg-heading {
-    line-height: 1;
-    font-size: 3.5rem;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  .works-left, .works-right {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .works-left h3 {
-    padding: 0 0.5rem;
-    text-align: justify;
-  }
-  .works-left .works-text {
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-    margin-bottom: 4rem;
-  }
-  .works-right {
-    margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
+  .about,
+  .works,
   .contact {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
+    position: absolute;
+    top: 4rem;
+    overflow-y: scroll;
+    padding: 1.5rem;
   }
+  div.about-left,
+  div.about-right,
+  div.works-left,
+  div.works-right,
+  div.contact-left,
+  div.contact-right {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  .about-left,
+  .works-left,
+  .contact-left {
+    height: auto;
+  }
+  .about-left .lg-heading,
+  .works-left .lg-heading,
+  .contact-left .lg-heading {
+    padding: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about-left h3,
+  .works-left h3,
+  .contact-left h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .about-left .bio-text,
+  .about-left .works-text,
+  .about-left .contact-text,
+  .works-left .bio-text,
+  .works-left .works-text,
+  .works-left .contact-text,
+  .contact-left .bio-text,
+  .contact-left .works-text,
+  .contact-left .contact-text {
+    padding: 0;
+    margin: 0;
+  }
+  .about-right,
+  .works-right,
+  .contact-right {
+    height: auto;
+    align-items: center;
+    justify-content: start;
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: 1fr;
+  }
+  .bio-btn,
+  .eduAndBtn,
+  .expAndBtn,
+  .works-btn,
   .contact-btn {
     display: none !important;
-  }
-  .contact h1 {
-    padding-top: 0;
-  }
-  .contact .lg-heading {
-    line-height: 1;
-    font-size: 3.5rem;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  .contact-left, .contact-right {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .contact-left h3 {
-    padding: 0 0.5rem;
-    text-align: justify;
-  }
-  .contact-left .contact-text {
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-    margin: 0;
-  }
-  .contact-right {
-    margin: 0;
-  }
-  .contact-right form {
-    padding: 0 1rem;
-    margin: 0;
-    width: 90%;
-  }
-  .contact-right form .form-item {
-    width: 100%;
   }
 }

@@ -31,7 +31,6 @@ function toggleMenu() {
 const bioBtn = document.querySelector(".bio-btn");
 const bioText = document.querySelector(".bio-text");
 let showBio = false;
-let mediaSm = window.matchMedia("screen and (max-width: 500px)");
 
 if (bioBtn) {
   bioBtn.addEventListener("click", toggleBio);
@@ -129,4 +128,12 @@ function toggleContact() {
     contactText.classList.remove("show");
     showContact = false;
   }
+}
+
+//Media Query ------ Mobile view
+let mediaSm = window.matchMedia("screen and (max-width: 500px)");
+
+if (mediaSm) {
+  // bioText.classList.add("show");
+  contactText.classList.add("show");
 }

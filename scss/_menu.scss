@@ -73,11 +73,11 @@
       transform: translate3d(0, 0, 0);
     }
     .nav-item {
-      transform: translate3d(100px, 0, 0);
-      @include easeOut;
+      // transform: translate3d(100px, 0, 0);
+      // @include easeOut;
 
       &.show {
-        transform: translate3d(0, 0, 0);
+        display: inline-block;
       }
       .nav-link {
         display: inline-block;
@@ -91,11 +91,11 @@
         }
       }
     }
-    @for $i from 1 through 4 {
-      .nav-item:nth-child(#{$i}) {
-        transition-delay: $i * 0.1s;
-      }
-    }
+    // @for $i from 1 through 4 {
+    //   .nav-item:nth-child(#{$i}) {
+    //     transition-delay: $i * 0.1s;
+    //   }
+    // }
   }
 
   &-branding {

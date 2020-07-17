@@ -887,7 +887,7 @@ main .icons a:hover {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .about h1 {
     padding-top: 1.2rem;
@@ -1079,7 +1079,7 @@ main .icons a:hover {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .about h1 {
     padding-top: 1.2rem;

@@ -895,9 +895,9 @@ main .icons a:hover {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    top: 4rem;
+    top: 3.5rem;
     overflow-y: scroll;
-    padding: 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
     height: auto;
   }
   div.about-left,
@@ -966,6 +966,24 @@ main .icons a:hover {
     grid-template-columns: 1fr;
     visibility: visible;
     transform: translate3d(0, 0, 0);
+  }
+  .about-right .edu .eduTitleSm,
+  .about-right .edu .expTitleSm,
+  .about-right .exp .eduTitleSm,
+  .about-right .exp .expTitleSm,
+  .works-right .edu .eduTitleSm,
+  .works-right .edu .expTitleSm,
+  .works-right .exp .eduTitleSm,
+  .works-right .exp .expTitleSm,
+  .contact-right .edu .eduTitleSm,
+  .contact-right .edu .expTitleSm,
+  .contact-right .exp .eduTitleSm,
+  .contact-right .exp .expTitleSm {
+    display: grid;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    color: #222f5b;
   }
   .about-right form,
   .works-right form,

@@ -389,6 +389,7 @@
   .about,
   .works,
   .contact {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     top: 4rem;

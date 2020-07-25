@@ -558,8 +558,8 @@
 
 .contact-right {
   margin-top: 20vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .contact-right form {
@@ -892,10 +892,12 @@ main .icons a:hover {
   .about,
   .works,
   .contact {
-    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
     top: 4rem;
     overflow-y: scroll;
     padding: 1.5rem;
+    height: auto;
   }
   div.about-left,
   div.about-right,
@@ -910,7 +912,7 @@ main .icons a:hover {
   .about-left,
   .works-left,
   .contact-left {
-    height: auto;
+    height: fit-content;
   }
   .about-left .lg-heading,
   .works-left .lg-heading,
@@ -936,16 +938,43 @@ main .icons a:hover {
   .contact-left .contact-text {
     padding: 0;
     margin: 0;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    text-align: justify;
+    text-align-last: center;
   }
   .about-right,
   .works-right,
   .contact-right {
-    height: auto;
-    align-items: center;
-    justify-content: start;
     display: grid;
     gap: 0.7rem;
     grid-template-columns: 1fr;
+    height: fit-content;
+    align-items: center;
+    justify-content: start;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .about-right .edu-items,
+  .about-right .exp-items,
+  .works-right .edu-items,
+  .works-right .exp-items,
+  .contact-right .edu-items,
+  .contact-right .exp-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+  .about-right form,
+  .works-right form,
+  .contact-right form {
+    margin-left: 0;
+  }
+  .about-right .form-item,
+  .works-right .form-item,
+  .contact-right .form-item {
+    width: 100%;
   }
   .bio-btn,
   .eduAndBtn,

@@ -48,8 +48,8 @@
   }
   &-right {
     margin-top: 20vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
 
     form {
       margin-left: 3rem;

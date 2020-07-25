@@ -632,6 +632,9 @@
   font-size: 1.2rem;
   color: #222f5b;
   font-family: "Raleway", "sans-serif";
+  background: #222f5b;
+  color: #eeeeee;
+  padding-top: 0;
 }
 
 .contact-right .form-item .submit:active {

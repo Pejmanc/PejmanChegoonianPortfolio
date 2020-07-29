@@ -814,7 +814,7 @@ main .icons a:hover {
   transition: all 0.25s ease-in;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 768px) {
   div.menu-branding,
   ul.menu-nav {
     float: none;

@@ -129,11 +129,3 @@ function toggleContact() {
     showContact = false;
   }
 }
-
-//Media Query ------ Mobile view
-let mediaSm = window.matchMedia("screen and (max-width: 500px)");
-
-if (mediaSm) {
-  // bioText.classList.add("show");
-  contactText.classList.add("show");
-}

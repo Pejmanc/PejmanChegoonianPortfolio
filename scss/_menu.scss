@@ -91,11 +91,6 @@
         }
       }
     }
-    // @for $i from 1 through 4 {
-    //   .nav-item:nth-child(#{$i}) {
-    //     transition-delay: $i * 0.1s;
-    //   }
-    // }
   }
 
   &-branding {

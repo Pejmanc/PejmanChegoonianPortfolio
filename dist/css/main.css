@@ -814,10 +814,7 @@ main .icons a:hover {
   transition: all 0.25s ease-in;
 }
 
-@media screen and (max-width: 768px) {
-  body#bg-img {
-    background: #696969;
-  }
+@media screen and (max-width: 1025px) {
   div.menu-branding,
   ul.menu-nav {
     float: none;
@@ -843,27 +840,6 @@ main .icons a:hover {
     width: 150px;
     height: 150px;
   }
-  #home {
-    text-align: center;
-    align-items: center;
-    padding: 0.5rem;
-  }
-  #home .lg-heading {
-    line-height: 1;
-    font-size: 3.5rem;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  #home .sm-heading {
-    margin-bottom: 20vh;
-    font-size: 1.5rem;
-  }
-  body {
-    overflow-x: hidden;
-  }
-}
-
-@media screen and (max-width: 500px) {
   .menu-btn {
     right: 15px;
     top: 20px;
